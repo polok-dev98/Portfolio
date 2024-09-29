@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asif Pervez Polok's Projects</title>
+    <link rel="stylesheet" href="assets/css/project_styles.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="research.html">Research</a>
+            <a href="assets\polok_resume.pdf" target="_blank">Résumé</a>
+          </div>
+    </header>
+    <br>
+    <br>
+    <br>
+    <main>
+        <section class="projects">
+            <div class="filters">
+                <button>Machine Learning</button>
+                <button>Computer Vision</button>
+                <button>Generative AI Software Development</button>
+            </div>
+            <div class="projects-container">
+                
+                <div class="project">
+                    <h2 id="HWOCR">Handwritten Prescription Digitalization using Layout Analysis and OCR</h2>
+                    <img src="assets\project_images\prescription.png" alt="Secure Sum Protocol" loading="lazy" style="width: 80%; max-width: 800px;">
+                    <a href="https://github.com/polok-dev98/Handwritten-Prescription-Digitalization-using-Layout-Analysis-and-OCR">Code</a>
+                   
+                    <p style="color:rgb(44, 44, 52);"><em>{PaddleOCR, TrOCR, YOLO}</em></p>
+                    <p align="justify">The project focuses on digitizing handwritten prescriptions through sophisticated layout analysis and OCR technologies. Employing a segmented model for precise line-by-line segmentation, it extracts crucial details including unique identification numbers, medication names, frequencies, quantities, and medical histories. An optimized OCR model is utilized for accurate information extraction from handwritten text, while a generative model transforms raw data into structured outputs, enhancing efficiency and precision in medication management and healthcare record-keeping.</p>
+                </div>
+
+    
+                
+                <div class="project">
+                    <h2 id="ATS">Abstract Employee Logs Summarization using Large Language Model</h2>
+                    <img src="assets\project_images\text2textsum.png" alt="TCPSwift">
+                    
+                    <a href="https://github.com/polok-dev98/Abstract_EmployeeLog_summerization_GooglePegasus_LLM">Code</a>
+                    
+                    <p style="color:rgb(44, 44, 52);"><em>{Google Pegasus, LLM}</em></p>
+                    <p align="justify">This project utilizes the advanced capabilities of the Pegasus Text to Text Generation model to automate the 
+                        summarization of employee working contribution logs, aiming to distill key insights efficiently. By inputting verbose logs 
+                        into the Pegasus model, concise and coherent summaries are generated that encapsulate the essential points of each entry. 
+                        The obtained summaries serve to provide decision-makers with quick overviews of employees' contributions, progress, and challenges. 
+                        Through rigorous evaluation using the ROUGE metric, the approach achieves commendable scores, with <b>ROUGE-1 at 0.613, ROUGE-2 at 
+                        0.373, ROUGE-L at 0.557, and ROUGE-Lsum at 0.556</b>. These scores attest to the effectiveness of the model in capturing the 
+                        essence of the original logs. By integrating Pegasus into the workflow of handling employee logs, organizations stand to streamline 
+                        summarization processes, facilitating more efficient decision-making, performance evaluation, and feedback provision while freeing 
+                        up valuable time for managerial and HR tasks. </p>
+                </div>
+                
+                
+                <div class="project">
+                    <h2 id="APT">Automated Passport Number Tracking Using Image Verification & Identification</h2>
+                    <img src="assets\project_images\atp.png" alt="TCPSwift">
+                    <a href="https://github.com/polok-dev98/Automated-Passport-Number-Tracking-Using-Image-Verification-Identification">Code</a>
+      
+                    <p style="color:rgb(44, 44, 52);"><em>{DL, VGGFace, MTCNN}</em></p>
+                    <p align="justify"> 
+                        This project focuses on automated tracking of passport numbers through image verification and face identification 
+                        techniques. The system processes input images, extracts facial features, and compares them against an existing database 
+                        to identify individuals. The core technologies used include OpenCV, MTCNN for face detection, and VGGFace for facial 
+                        feature extraction. Beyond merely tracking passport numbers, it integrates an automated model
+                        training mechanism triggered at specified intervals upon receiving new images, guaranteeing ongoing refinement and peak
+                        performance </p>
+                </div>
+                
+
+                <div class="project">
+                    <h2 id="ABE">Automated Visiting & NID Card Cropping System</h2>
+                    <img src="assets\project_images\ABE.png" alt="TCPSwift" >
+                    <a href="https://github.com/polok-dev98/Visiting_NID_CardCropping_system_YoloV8">Code</a>
+                    <a href="https://huggingface.co/spaces/iluasdfiuasfd/Visiting-and-NID-Card-Cropping?logs=container" target="_blank">Live</a>
+                    
+                    <p style="color:rgb(44, 44, 52);"><em>{YoloV8, OpenCV, Flask}</em></p>
+                    <p align="justify">Developed a web application utilizing Flask for detecting and cropping visiting and NID cards from uploaded images using
+                        a fine-tuned YOLOv8 model. Integrated OpenCV for image processing and employed the Ultralytics YOLOv8 model, fine-tuning it with real card and
+                        NID images to enhance detection accuracy, and seamlessly crop detected regions. </p>
+                </div>
+                
+                
+                <div class="project">
+                    <h2 id="NER">Name Entity Recognition (NER) with MISTRAL, BERT, and FLAN T5</h2>
+                    <img src="assets\project_images\NER.png" alt="NER" style="width: 90%; max-width: 900px;">
+                    
+                    <a href="https://github.com/polok-dev98/NameEntityRecognition-with-Mistral-BERT-FLAN-LLModels">Code</a> 
+                    
+                    <p style="color:rgb(44, 44, 52);"><em>{MISTRAL, BERT, FLAN T5, Unsloth}</em></p>
+                    <p align="justify">The project focuses on Developing a Name Entity Recognition system trained and implemented using MISTRAL, BERT, and FLAN T5 models. Utilized the Bangla-BERT model to identify and classify entities such as persons, organizations, locations, objects, mail,
+                        etc from Bangla text. Mistral and Flan T5 models were fine-tuned on a Cyber Security dataset for Software and Security Entities such as Software Versions, Programming Languages, Files or Functions, Applications or Software Names, Operating Systems etc from English text.</b>. </p>
+                </div>
+
+
+                <div class="project">
+                    <h2 id="DVO">Intelligent Question Answering and Code Generation Chatbot for Tabular Data</h2>
+                    <img src="assets\project_images\DVO.png" alt="compare" style="width: 90%; max-width: 800px;">
+                    
+                    <a href="https://github.com/polok-dev98/Intelligent-QA_and_Code_Generation-Chatbot-for-Tabular-Data_OpenAI">Code</a> 
+                    
+                    <p style="color:rgb(44, 44, 52);"><em>{OpenAI, Matplotlib, Seaborn}</em></p>
+                    <p align="justify">This project is a web application designed for generating various statistical charts (bar, pie, histogram, scatter) based on user-uploaded CSV data. It also includes a conversational AI feature using OpenAI's GPT-4 model for generating Python code snippets based on natural language input related to data queries. The application is built using Flask, with OpenAI's API for conversation and code generation, and utilizes Pandas for data handling and Matplotlib/Seaborn for visualization.</p>
+                </div>
+
+
+                <div class="project">
+                    <h2 id="BSL">BanglaSpellT5: Spell Correction for Bangla Language</h2>
+                    <img src="assets\project_images\SP.jpg" alt="SC" style="width: 90%; max-width: 900px;">
+                    <a href="https://github.com/polok-dev98/Bangla_SpellCorrections_BanglaT5_HappyTransformer">Code</a> 
+                   
+                    <p style="color:rgb(44, 44, 52);"><em>{Bangla-T5, HappyTransformer, NLTK}</em></p>
+                    <p align="justify">This project focused on Bangla spell correction using the Bangla-T5 model. The project involves preprocessing data, training the model, and testing its performance. Here the main goal is to fine tune Bangla-T5 model for Bangla spell correction task so that the model can able to correct the misspelled Bangla text.</p>
+                </div>
+
+                <div class="project">
+                    <h2 id="CG">Image To Caption Generator DeepLearning Project</h2>
+                    <img src="assets\project_images\EC.PNG" alt="Cation" style="width: 90%; max-width: 900px;">
+                    <a href="https://github.com/polok-dev98/ImageCaptioning_system_pytorch">Code</a> 
+                    <p style="color:rgb(44, 44, 52);"><em>{Encoder, Decoder, Attention, ResNet101, LSTM}</em></p>
+                    <p align="justify">This project focused on image captioning that generates descriptive captions for images using 
+                        deep learning techniques. Utilized a pre-trained CNN (ResNet101) as an encoder to extract features from images for generating descriptive captions.
+                        Implemented an LSTM decoder to generate captions based on the extracted image features, forming a complete image
+                        captioning system using deep learning techniques</p>
+                </div>
+
+                <div class="project">
+                    <h2 id="Qpro">Queue Waiting Time Prediction in Banking System with MLflow</h2>
+                    <img src="assets\project_images\qpro.png" alt="Cation" style="width: 100%; max-width: 900px;">
+                    <a href="https://github.com/polok-dev98/Queue-Waiting-Time-Prediction-in-Banking-System-with-MLflow">Code</a> 
+                    <p style="color:rgb(44, 44, 52);"><em>{Sklearn, RandomForest, KNN, XGBBoost, MLflow, Flask}</em></p>
+                    <p align="justify">The project aims to predict the waiting time for bank customers based on the length of the 
+                        service queue. By utilizing machine learning models such as (XGBoost, RandomForest, KNN), the system helps 
+                        customers estimate how long they will need to wait before receiving service, making the process more 
+                        transparent and improving customer satisfaction. The project uses MLflow to manage and track machine 
+                        learning models, compares different models' performance based on accuracy, and deploys the best model to 
+                        production. A Flask API is used to serve the production model for real-time waiting time predictions.</p>
+                </div>
+
+
+
+                <!-- Add more projects as needed -->
+            </div>
+        </section>
+        
+    </main>
+    <script src="scripts.js"></script>
+
+    <!-- Copyright Notice -->
+    <div class="copyright">
+        &copy; 2024 Asif Pervez Polok.
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/vanilla-back-to-top.min.js"></script>
+    <script>
+        addBackToTop({
+        backgroundColor: "#fff",
+        innerHTML: "Back to Top",
+        textColor: "#333",
+        });
+    </script>
+    <script src="assets/js/scale.fix.js"></script>
+</body>
+</html>
