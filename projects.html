@@ -5,181 +5,851 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Asif Pervez Polok's Projects</title>
     <link rel="stylesheet" href="assets/css/project_styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <header>
         <div class="navbar">
             <a href="index.html">Home</a>
-            <a href="projects.html">Projects</a>
+            <a href="projects.html" class="active">Projects</a>
             <a href="research.html">Research</a>
             <a href="assets\polok_resume.pdf" target="_blank">Résumé</a>
-          </div>
+        </div>
     </header>
-    <br>
-    <br>
-    <br>
+
     <main>
         <section class="projects">
+            <div class="page-title">
+                <h1>My Projects</h1>
+                <p>Explore my work in AI, Machine Learning, and Software Development</p>
+            </div>
+
             <div class="filters">
+                <button class="active">All Projects</button>
                 <button>Machine Learning</button>
                 <button>Computer Vision</button>
-                <button>Generative AI Software Development</button>
+                <button>Generative AI</button>
             </div>
 
             <div class="projects-container">
                 <div class="project">
-                    <h2 id="HWOCR">Neo4j-Driven AI Chatbot with Knowledge Graph and LLM Integration</h2>
-                    <img src="assets\project_images\image.png" alt="Secure Sum Protocol" loading="lazy" style="width: 80%; max-width: 800px;">
-                    <div class="buttons">
-                        <a href="https://github.com/polok-dev98/Neo4j-Driven-AI-Chatbot-with-KnowledgeGraph-and-LLM-Integration" class="btn btn-primary">Code</a>
+                    <div class="project-header">
+                        <h2 id="DBBot">NeuroReport: DB Query & Report Generation Multi-Agent System</h2>
                     </div>
-                    <p style="color:rgb(44, 44, 52);"><em>{Llama 3.2, Neo4j, HybridSearch, LangChain}</em></p>
-                    <p align="justify">
-                        This project utilizes the cutting-edge AI AssistPro Smart Agent for Customer Interaction system that combines the power of Neo4j Knowledge Graphs, Retrieval-Augmented Generation (RAG), Hybrid Search, and LLM to provide contextually accurate responses across PDF, CSV, and TXT datasets. This project idea leverages the strengths of graph-based reasoning and generative AI for dynamic, real-time querying and scalable conversational experiences, ideal for enterprise applications.
-                    </p>
-                    <p align="justify">
-                        🚀 <strong>Features:</strong><br>
-                        🔗 <strong>Neo4j Knowledge Graph Integration:</strong> Organizes and manages structured knowledge for enhanced context-awareness.<br>
-                        🔄 <strong>Retrieval-Augmented Generation (RAG):</strong> Employs a hybrid approach by retrieving knowledge graph data and LLM for robust responses.<br>
-                        🔍 <strong>Dynamic Querying:</strong> Uses Cypher queries to extract relevant knowledge graph data in real-time.<br>
-                        📼 <strong>API Integration:</strong> Includes APIs for seamless integration with web.
-                    </p>
-                </div>
-    
-                
-                <div class="project">
-                    <h2 id="ATS">SmartDocuFix: Intelligent Document Detection & Rotation Correction</h2>
-                    <img src="assets\project_images\11.png" alt="TCPSwift">
-                    <div class="btn-links">
-                        <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/polok-dev98/AI-Powered-Document-Segmentation-and-Rotation" target="_blank">Code</a>
-                        <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://huggingface.co/spaces/iluasdfiuasfd/DocScanner" target="_blank">  Live</a>
+                    
+                    <div class="project-image-container">
+                        <img src="assets\project_images\db1.png" alt="NeuroReport Interface" loading="lazy" class="rotated-image">
+                    </div>
+                    
+                    <div class="project-tech">
+                        <span class="tech-tag">Llama 3.3</span>
+                        <span class="tech-tag">LangChain</span>
+                        <span class="tech-tag">LangGraph</span>
+                        <span class="tech-tag">SQLAlchemy</span>
+                        <span class="tech-tag">Flask</span>
+                        <span class="tech-tag">HTML/CSS</span>
+                    </div>
+                    
+                    <div class="project-content">
+                        <p align="justify">
+                            NeuroReport is an intelligent AI-powered Multi-Agent system that transforms natural language queries (in both English and Bangla) into comprehensive business reports (PDF format). The system leverages advanced language models and a multi-agent workflow to understand user requests, automatically discover and filter relevant database tables through semantic schema analysis, generate optimized SQL queries, execute them against databases, analyze results, and produce professional PDF reports with charts and insights.
+                        </p>
+                        
+                        <div class="project-features">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-language"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <strong>Natural Language Processing:</strong> Deep understanding of queries in English and Bangla with business context awareness.
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-robot"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <strong>Multi-Agent Architecture:</strong> Specialized agents for schema analysis, query generation, execution, visualization, and reporting.
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-sitemap"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <strong>Intelligent Schema Navigation:</strong> Automatic identification of relevant tables through semantic analysis and relationship mapping.
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-database"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <strong>Automated SQL Generation:</strong> Converts natural language to optimized, secure SQL queries with proper joins and aggregations.
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-chart-bar"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <strong>Smart Data Visualization:</strong> Automatic chart selection and generation based on data types and business context.
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-file-pdf"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <strong>Professional PDF Reports:</strong> Professional PDF reports with embedded charts, tables, and executive summaries.
+                                </div>
+                            </div>
                         </div>
-                    <p style="color:rgb(44, 44, 52);"><em>{YoloV11, Flask, OpenCV}</em></p>
-                    <p align="justify">
-                        This project is designed to segment documents from images using the YOLOv11 segmentation model and correct their orientation if they are rotated, similar to CamScanner. The model is trained on various types of documents and integrated into a Flask web application for easy usage.
-                    </p>
+                        
+                        <div class="project-buttons">
+                            <a href="https://github.com/polok-dev98/AI-Powered-DBQuery-and-Report-Generation-Multi-Agent-System" class="btn">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project-header">
+                        <h2 id="HWOCR">Neo4j-Driven AI Chatbot with Knowledge Graph and LLM Integration</h2>
+                    </div>
                     
-                    <p align="justify">
-                        🚀 <strong>Features:</strong><br>
-                        📄 <strong>Document Segmentation:</strong> Detects and extracts documents from images using a trained YOLOv11 segmentation model.<br>
-                        🔄 <strong>Orientation Correction:</strong> Automatically corrects rotated documents to align them properly.<br>
-                        🌐 <strong>Flask API:</strong> Provides a simple web interface for uploading images and obtaining processed results.<br>
-                        🐳 <strong>Docker Support:</strong> Easily deployable using Docker.
-                    </p>
-                </div>
-                
-                
-                <div class="project">
-                    <h2 id="APT">AIAgentInsight: Multi-Agent Product Analyzer</h2>
-                    <img src="assets\project_images\22.png" alt="TCPSwift">
-                    <a href="https://github.com/polok-dev98/Multi-Agent-Product-Analyzer" class="btn btn-primary">Code</a>
-                    <p style="color:rgb(44, 44, 52);"><em>{Langchain, LLama3.3, Crawl4ai, Streamlit}</em></p>
-                    <p align="justify"> 
-                    AIAgentInsight is a Streamlit-based web application designed to provide detailed insights and recommendations for analyzing product or company-related queries. It utilizes various agents for scraping, validating, and summarizing data from platforms like G2, Crunchbase, and DuckDuckGo, combined with the power of LLMs for query analysis and summary generation.
-                    </p>
-                    <p align="justify">
-                        🚀 <strong>Features:</strong><br>
-                        🔎 <strong>Query Analysis:</strong> Analyze user queries to identify the product or company and generate search recommendations.<br>
-                        📝 <strong>G2 Reviews Extraction:</strong> Fetch detailed product reviews, ratings, and sentiments from G2.<br>
-                        📊 <strong>Crunchbase Insights:</strong> Aggregate and extract business-related insights from Crunchbase.<br>
-                        🌍 <strong>Web Content Search:</strong> Perform searches based on query recommendations and clean the extracted content.<br>
-                        📄 <strong>Summary Generation:</strong> Combine data from multiple sources to generate a cohesive business analysis summary.
-                    </p>
-                </div>
-
-                <div class="project">
-                    <h2 id="Qpro">WhisprNote: Minutes of Meetings from Audio and Video Recording</h2>
-                    <img src="assets\project_images\44.png" alt="Cation" style="width: 100%; max-width: 900px;">
-                    <a href="https://github.com/polok-dev98/Minutes-of-meetings-from-audio-and-video" class="btn btn-primary">Code</a> 
-                    <p style="color:rgb(44, 44, 52);"><em>{Whisper, Gemini-pro}</em></p>
-                    <p align="justify">The project aims to design an audio-visual transcription system leveraging Whisper and LLM models to generate clear, actionable
-                        minutes of meetings and summarize meeting transcripts. Ensured alignment and accountability by capturing key decisions and action plans in an
-                        engaging, accessible format.</p>
-                    <p align="justify">
-                        🚀 <strong>Features:</strong><br>
-                        🎙️ <strong>Automatic Transcription:</strong> Converts audio and video recordings into text using Whisper, a robust speech-to-text model.<br>
-                        📝 <strong>Structured Summarization:</strong> Summarizes transcriptions into coherent meeting minutes using LLM.<br>
-                        💻 <strong>User-Friendly Interface:</strong> Designed to be accessible and easy to use for non-technical users.
-                    </p>
-                </div>
-
-
-                <div class="project">
-                    <h2 id="ABE">Automated Visiting & NID Card Cropping System</h2>
-                    <img src="assets\project_images\ABE.png" alt="TCPSwift" >
-                    <a href="https://github.com/polok-dev98/Visiting_NID_CardCropping_system_YoloV8">Code</a>
-                    <a href="https://huggingface.co/spaces/iluasdfiuasfd/Visiting-and-NID-Card-Cropping?logs=container" target="_blank"> Live</a>
+                    <div class="project-image-container">
+                        <img src="assets\project_images\image.png" alt="Neo4j Chatbot Interface" loading="lazy">
+                    </div>
                     
-                    <p style="color:rgb(44, 44, 52);"><em>{YoloV8, OpenCV, Flask}</em></p>
-                    <p align="justify">Developed a web application utilizing Flask for detecting and cropping visiting and NID cards from uploaded images using
-                        a fine-tuned YOLOv8 model. Integrated OpenCV for image processing and employed the Ultralytics YOLOv8 model, fine-tuning it with real card and
-                        NID images to enhance detection accuracy, and seamlessly crop detected regions. </p>
-                </div>
-                
-                
-                <div class="project">
-                    <h2 id="NER">Name Entity Recognition (NER) with MISTRAL, BERT, and FLAN T5</h2>
-                    <img src="assets\project_images\NER.png" alt="NER" style="width: 90%; max-width: 900px;">
+                    <div class="project-tech">
+                        <span class="tech-tag">Llama 3.2</span>
+                        <span class="tech-tag">Neo4j</span>
+                        <span class="tech-tag">HybridSearch</span>
+                        <span class="tech-tag">LangChain</span>
+                    </div>
                     
-                    <a href="https://github.com/polok-dev98/NameEntityRecognition-with-Mistral-BERT-FLAN-LLModels">Code</a> 
+                    <div class="project-content">
+                        <p align="justify">
+                            This project utilizes the cutting-edge AI AssistPro Smart Agent for Customer Interaction system that combines the power of Neo4j Knowledge Graphs, Retrieval-Augmented Generation (RAG), Hybrid Search, and LLM to provide contextually accurate responses across PDF, CSV, and TXT datasets. This project idea leverages the strengths of graph-based reasoning and generative AI for dynamic, real-time querying and scalable conversational experiences, ideal for enterprise applications.
+                        </p>
+                        
+                        <div class="project-features">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-project-diagram"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <strong>Neo4j Knowledge Graph Integration:</strong> Organizes and manages structured knowledge for enhanced context-awareness.
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <strong>Retrieval-Augmented Generation (RAG):</strong> Employs a hybrid approach by retrieving knowledge graph data and LLM for robust responses.
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-bolt"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <strong>Dynamic Querying:</strong> Uses Cypher queries to extract relevant knowledge graph data in real-time.
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-plug"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <strong>API Integration:</strong> Includes APIs for seamless integration with web applications.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-buttons">
+                            <a href="https://github.com/polok-dev98/Neo4j-Driven-AI-Chatbot-with-KnowledgeGraph-and-LLM-Integration" class="btn">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project-header">
+                        <h2 id="ATS">SmartDocuFix: Intelligent Document Detection & Rotation Correction</h2>
+                    </div>
                     
-                    <p style="color:rgb(44, 44, 52);"><em>{MISTRAL, BERT, FLAN T5, Unsloth}</em></p>
-                    <p align="justify">The project focuses on Developing a Name Entity Recognition system trained and implemented using MISTRAL, BERT, and FLAN T5 models. Utilized the Bangla-BERT model to identify and classify entities such as persons, organizations, locations, objects, mail,
-                        etc from Bangla text. Mistral and Flan T5 models were fine-tuned on a Cyber Security dataset for Software and Security Entities such as Software Versions, Programming Languages, Files or Functions, Applications or Software Names, Operating Systems etc from English text.</b>. </p>
+                    <div class="project-image-container">
+                        <img src="assets\project_images\11.png" alt="SmartDocuFix Interface" loading="lazy">
+                    </div>
+                    
+                    <div class="project-tech">
+                        <span class="tech-tag">YoloV11</span>
+                        <span class="tech-tag">Flask</span>
+                        <span class="tech-tag">OpenCV</span>
+                        <span class="tech-tag">Docker</span>
+                    </div>
+                    
+                    <div class="project-content">
+                        <p align="justify">
+                            This project is designed to segment documents from images using the YOLOv11 segmentation model and correct their orientation if they are rotated, similar to CamScanner. The model is trained on various types of documents and integrated into a Flask web application for easy usage.
+                        </p>
+                        
+                        <div class="project-features">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-file-alt"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <strong>Document Segmentation:</strong> Detects and extracts documents from images using a trained YOLOv11 segmentation model.
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-sync-alt"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <strong>Orientation Correction:</strong> Automatically corrects rotated documents to align them properly.
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-globe"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <strong>Flask API:</strong> Provides a simple web interface for uploading images and obtaining processed results.
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fab fa-docker"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <strong>Docker Support:</strong> Easily deployable using Docker containers.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-buttons">
+                            <a href="https://github.com/polok-dev98/AI-Powered-Document-Segmentation-and-Rotation" class="btn">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                            <a href="https://huggingface.co/spaces/iluasdfiuasfd/DocScanner" class="btn btn-outline-primary">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="project">
+                    <div class="project-header">
+                        <h2 id="Pres">Handwritten Prescription Digitalization using Layout Analysis and OCR</h2>
+                    </div>
+                    
+                    <div class="project-image-container">
+                        <img src="assets\project_images\Pr1.jpg" alt="Prescription Degital" loading="lazy">
+                    </div>
+                    
+                    <div class="project-tech">
+                        <span class="tech-tag">YoloV8</span>
+                        <span class="tech-tag">TrOCR</span>
+                        <span class="tech-tag">Florence2</span>
+                        <span class="tech-tag">LLM</span>
+                        <span class="tech-tag">OpenCV</span>
+                    </div>
+                    
+                    <div class="project-content">
+                        <p align="justify">
+                            The project focuses on digitizing handwritten prescriptions for medication management through layout analysis and OCR technologies. Employing YOLO model for line-by-line segmentation, it extracts crucial details. An fine-tuned OCR model is utilized for information extraction from handwritten text and llm model transforms raw data into structured outputs.
+                        </p>
+                        
+                        <div class="project-features">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-file-alt"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <strong>Image Segmentation:</strong> Isolates relevant sections of images, such as passport numbers and medication lines, using YOLO.
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-sync-alt"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <strong>Optical Character Recognition (OCR):</strong> Extracts text from the segmented images with high accuracy using multiple OCR models.
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-globe"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <strong>Data Formatting:</strong> Converts extracted data into a structured JSON format for easier analysis and integration using Fine-tuned LLM.
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-folder-open"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <strong>File Management:</strong> Automatically cleans up temporary files after processing to maintain a clutter-free workspace.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-buttons">
+                            <a href="https://github.com/polok-dev98/Handwritten-Prescription-Digitalization-using-Layout-Analysis-and-OCR" class="btn">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="project">
+                    <div class="project-header">
+                        <h2 id="APT">AIAgentInsight: Multi-Agent Product Analyzer</h2>
+                    </div>
+                    
+                    <div class="project-image-container">
+                        <img src="assets\project_images\22.png" alt="AIAgentInsight Interface" loading="lazy">
+                    </div>
+                    
+                    <div class="project-tech">
+                        <span class="tech-tag">Langchain</span>
+                        <span class="tech-tag">LLama3.3</span>
+                        <span class="tech-tag">Crawl4ai</span>
+                        <span class="tech-tag">Streamlit</span>
+                    </div>
+                    
+                    <div class="project-content">
+                        <p align="justify"> 
+                            AIAgentInsight is a Streamlit-based web application designed to provide detailed insights and recommendations for analyzing product or company-related queries. It utilizes various agents for scraping, validating, and summarizing data from platforms like G2, Crunchbase, and DuckDuckGo, combined with the power of LLMs for query analysis and summary generation.
+                        </p>
+                        
+                        <div class="project-features">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <strong>Query Analysis:</strong> Analyze user queries to identify the product or company and generate search recommendations.
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <strong>G2 Reviews Extraction:</strong> Fetch detailed product reviews, ratings, and sentiments from G2.
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <strong>Crunchbase Insights:</strong> Aggregate and extract business-related insights from Crunchbase.
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-globe"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <strong>Web Content Search:</strong> Perform searches based on query recommendations and clean the extracted content.
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-file-alt"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <strong>Summary Generation:</strong> Combine data from multiple sources to generate a cohesive business analysis summary.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-buttons">
+                            <a href="https://github.com/polok-dev98/Multi-Agent-Product-Analyzer" class="btn">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project-header">
+                        <h2 id="Qpro">WhisprNote: Minutes of Meetings from Audio and Video Recording</h2>
+                    </div>
+                    
+                    <div class="project-image-container">
+                        <img src="assets\project_images\44.png" alt="WhisprNote Interface" loading="lazy">
+                    </div>
+                    
+                    <div class="project-tech">
+                        <span class="tech-tag">Whisper</span>
+                        <span class="tech-tag">Gemini-pro</span>
+                        <span class="tech-tag">LLM</span>
+                    </div>
+                    
+                    <div class="project-content">
+                        <p align="justify">
+                            The project aims to design an audio-visual transcription system leveraging Whisper and LLM models to generate clear, actionable minutes of meetings and summarize meeting transcripts. Ensured alignment and accountability by capturing key decisions and action plans in an engaging, accessible format.
+                        </p>
+                        
+                        <div class="project-features">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-microphone"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <strong>Automatic Transcription:</strong> Converts audio and video recordings into text using Whisper, a robust speech-to-text model.
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-file-alt"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <strong>Structured Summarization:</strong> Summarizes transcriptions into coherent meeting minutes using LLM.
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-desktop"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <strong>User-Friendly Interface:</strong> Designed to be accessible and easy to use for non-technical users.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-buttons">
+                            <a href="https://github.com/polok-dev98/Minutes-of-meetings-from-audio-and-video" class="btn">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project-header">
+                        <h2 id="ABE">Automated Visiting & NID Card Cropping System</h2>
+                    </div>
+                    
+                    <div class="project-image-container">
+                        <img src="assets\project_images\ABE.png" alt="Card Cropping System" loading="lazy">
+                    </div>
+                    
+                    <div class="project-tech">
+                        <span class="tech-tag">YoloV8</span>
+                        <span class="tech-tag">OpenCV</span>
+                        <span class="tech-tag">Flask</span>
+                    </div>
+                    
+                    <div class="project-content">
+                        <p align="justify">
+                            Developed a web application utilizing Flask for detecting and cropping visiting and NID cards from uploaded images using a fine-tuned YOLOv8 model. Integrated OpenCV for image processing and employed the Ultralytics YOLOv8 model, fine-tuning it with real card and NID images to enhance detection accuracy, and seamlessly crop detected regions.
+                        </p>
+                        
+                        <div class="project-features">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-id-card"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <strong>Card Detection:</strong> Automatically detects visiting cards and NID cards in images.
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-crop"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <strong>Precise Cropping:</strong> Accurately crops detected card regions from images.
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-globe"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <strong>Web Interface:</strong> User-friendly web application for easy card processing.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-buttons">
+                            <a href="https://github.com/polok-dev98/Visiting_NID_CardCropping_system_YoloV8" class="btn">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                            <a href="https://huggingface.co/spaces/iluasdfiuasfd/Visiting-and-NID-Card-Cropping?logs=container" class="btn btn-outline-primary">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project-header">
+                        <h2 id="ITSM">ITSM-Agent: Knowledge-Based Intelligent IT Service Solution</h2>
+                    </div>
+                    
+                    <div class="project-image-container">
+                        <img src="assets\project_images\ITSM.png" alt="ITSM" loading="lazy">
+                    </div>
+                    
+                    <div class="project-tech">
+                        <span class="tech-tag">Langchain</span>
+                        <span class="tech-tag">LLama 3.3</span>
+                        <span class="tech-tag">RAG</span>
+                        <span class="tech-tag">Flask</span>
+                    </div>
+                    
+                    <div class="project-content">
+                        <p align="justify">
+                            Knowledge-based AI solution leveraging LLM to deliver instant IT support for device setup, password management, VPN configuration, system troubleshooting, software installation, network issues, hardware diagnostics, and many more. Supports multiple concurrent users with maintained session history and context-aware responses.
+                        </p>
+                        
+                        <div class="project-features">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-file-alt"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <strong>Multi-User & Multi-Session Support:</strong> Unique session IDs for each conversation, Handle multiple users simultaneously without data mixing.
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-sync-alt"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <strong>Intelligent Knowledge Retrieval:</strong> FAISS Vector Database for Lightning-fast semantic search, Cosine similarity with configurable thresholds. 
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-globe"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <strong>Advanced AI Capabilities:</strong> Retrieval-Augmented Generation for accurate responses, Maintains conversation history and context.
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-globe"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <strong>Modern Web Interface:</strong> Gradient backgrounds, animations, and modern styling.
+                                </div>
+                            </div>
+                        </div> <!-- This closing div was missing -->
+                        
+                        <div class="project-buttons">
+                            <a href="https://github.com/polok-dev98/KnowledgeBase_ITSM_Bot/tree/main" class="btn">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
 
                 <div class="project">
-                    <h2 id="DVO">Intelligent Question Answering and Code Generation Chatbot for Tabular Data</h2>
-                    <img src="assets\project_images\DVO.png" alt="compare" style="width: 90%; max-width: 800px;">
+                    <div class="project-header">
+                        <h2 id="NER">Name Entity Recognition (NER) with MISTRAL, BERT, and FLAN T5</h2>
+                    </div>
                     
-                    <a href="https://github.com/polok-dev98/Intelligent-QA_and_Code_Generation-Chatbot-for-Tabular-Data_OpenAI">Code</a> 
+                    <div class="project-image-container">
+                        <img src="assets\project_images\NER.png" alt="NER System" loading="lazy">
+                    </div>
                     
-                    <p style="color:rgb(44, 44, 52);"><em>{OpenAI, Matplotlib, Seaborn}</em></p>
-                    <p align="justify">This project is a web application designed for generating various statistical charts (bar, pie, histogram, scatter) based on user-uploaded CSV data. It also includes a conversational AI feature using OpenAI's GPT-4 model for generating Python code snippets based on natural language input related to data queries. The application is built using Flask, with OpenAI's API for conversation and code generation, and utilizes Pandas for data handling and Matplotlib/Seaborn for visualization.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">MISTRAL</span>
+                        <span class="tech-tag">BERT</span>
+                        <span class="tech-tag">FLAN T5</span>
+                        <span class="tech-tag">Unsloth</span>
+                    </div>
+                    
+                    <div class="project-content">
+                        <p align="justify">
+                            The project focuses on Developing a Name Entity Recognition system trained and implemented using MISTRAL, BERT, and FLAN T5 models. Utilized the Bangla-BERT model to identify and classify entities such as persons, organizations, locations, objects, mail, etc from Bangla text. Mistral and Flan T5 models were fine-tuned on a Cyber Security dataset for Software and Security Entities such as Software Versions, Programming Languages, Files or Functions, Applications or Software Names, Operating Systems etc from English text.
+                        </p>
+                        
+                        <div class="project-features">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-tags"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <strong>Multi-Model NER:</strong> Utilizes MISTRAL, BERT, and FLAN T5 for comprehensive entity recognition.
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-language"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <strong>Bangla Text Processing:</strong> Specialized entity recognition for Bangla language text.
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <strong>Cyber Security Focus:</strong> Fine-tuned for security-related entities in English text.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-buttons">
+                            <a href="https://github.com/polok-dev98/NameEntityRecognition-with-Mistral-BERT-FLAN-LLModels" class="btn">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
                 </div>
-
 
                 <div class="project">
-                    <h2 id="BSL">BanglaSpellT5: Spell Correction for Bangla Language</h2>
-                    <img src="assets\project_images\SP.jpg" alt="SC" style="width: 90%; max-width: 900px;">
-                    <a href="https://github.com/polok-dev98/Bangla_SpellCorrections_BanglaT5_HappyTransformer">Code</a> 
-                   
-                    <p style="color:rgb(44, 44, 52);"><em>{Bangla-T5, HappyTransformer, NLTK}</em></p>
-                    <p align="justify">This project focused on Bangla spell correction using the Bangla-T5 model. The project involves preprocessing data, training the model, and testing its performance. Here the main goal is to fine tune Bangla-T5 model for Bangla spell correction task so that the model can able to correct the misspelled Bangla text.</p>
+                    <div class="project-header">
+                        <h2 id="DVO">Intelligent Question Answering and Code Generation Chatbot for Tabular Data</h2>
+                    </div>
+                    
+                    <div class="project-image-container">
+                        <img src="assets\project_images\DVO.png" alt="QA Chatbot" loading="lazy">
+                    </div>
+                    
+                    <div class="project-tech">
+                        <span class="tech-tag">OpenAI</span>
+                        <span class="tech-tag">Matplotlib</span>
+                        <span class="tech-tag">Seaborn</span>
+                        <span class="tech-tag">Flask</span>
+                    </div>
+                    
+                    <div class="project-content">
+                        <p align="justify">
+                            This project is a web application designed for generating various statistical charts (bar, pie, histogram, scatter) based on user-uploaded CSV data. It also includes a conversational AI feature using OpenAI's GPT-4 model for generating Python code snippets based on natural language input related to data queries. The application is built using Flask, with OpenAI's API for conversation and code generation, and utilizes Pandas for data handling and Matplotlib/Seaborn for visualization.
+                        </p>
+                        
+                        <div class="project-features">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-chart-bar"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <strong>Data Visualization:</strong> Generates various statistical charts from CSV data.
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <strong>Code Generation:</strong> Creates Python code snippets based on natural language queries.
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-comments"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <strong>Conversational AI:</strong> Uses OpenAI's GPT-4 for intelligent data analysis conversations.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-buttons">
+                            <a href="https://github.com/polok-dev98/Intelligent-QA_and_Code_Generation-Chatbot-for-Tabular-Data_OpenAI" class="btn">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="project">
-                    <h2 id="CG">Image To Caption Generator DeepLearning Project</h2>
-                    <img src="assets\project_images\EC.png" alt="Cation" style="width: 90%; max-width: 900px;">
-                    <a href="https://github.com/polok-dev98/ImageCaptioning_system_pytorch">Code</a> 
-                    <p style="color:rgb(44, 44, 52);"><em>{Encoder, Decoder, Attention, ResNet101, LSTM}</em></p>
-                    <p align="justify">This project focused on image captioning that generates descriptive captions for images using 
-                        deep learning techniques. Utilized a pre-trained CNN (ResNet101) as an encoder to extract features from images for generating descriptive captions.
-                        Implemented an LSTM decoder to generate captions based on the extracted image features, forming a complete image
-                        captioning system using deep learning techniques</p>
+                    <div class="project-header">
+                        <h2 id="BSL">BanglaSpellT5: Spell Correction for Bangla Language</h2>
+                    </div>
+                    
+                    <div class="project-image-container">
+                        <img src="assets\project_images\Sp1.png" alt="BanglaSpellT5" loading="lazy">
+                    </div>
+                    
+                    <div class="project-tech">
+                        <span class="tech-tag">Bangla-T5</span>
+                        <span class="tech-tag">HappyTransformer</span>
+                        <span class="tech-tag">NLTK</span>
+                    </div>
+                    
+                    <div class="project-content">
+                        <p align="justify">
+                            This project focused on Bangla spell correction using the Bangla-T5 model. The project involves preprocessing data, training the model, and testing its performance. Here the main goal is to fine tune Bangla-T5 model for Bangla spell correction task so that the model can able to correct the misspelled Bangla text.
+                        </p>
+                    <div class="project-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div class="feature-text">
+                                <strong>Advanced AI Architecture:</strong> Fine-tuned state-of-the-art transformer(Bangla T5) architecture for Bangla spell correction task.
+                            </div>
+                        </div>
+
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <strong>Beam Search Optimization:</strong> Multi-sequence generation for better corrections.
+                                </div>
+                            </div>
+
+                            <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-sync-alt"></i>
+                            </div>
+                            <div class="feature-text">
+                                <strong>Real-time Processing:</strong> Instant correction with optimized inference.
+                            </div>
+                        </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-globe"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <strong>Modern Web Interface:</strong> Gradient backgrounds, animations, and modern styling.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fab fa-docker"></i>
+                            </div>
+                            <div class="feature-text">
+                                <strong>Docker Support:</strong> Containerized deployment for easy scaling.
+                            </div>
+                        </div>
+
+
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-plug"></i>
+                            </div>
+                            <div class="feature-text">
+                                <strong>RESTful API:</strong> Simple integration with other applications.
+                            </div>
+                        </div>
+                        
+                        <div class="project-buttons">
+                            <a href="https://github.com/polok-dev98/Bangla_SpellCorrections_BanglaT5_HappyTransformer" class="btn">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
-
-                <!-- Add more projects as needed -->
+                <div class="project">
+                    <div class="project-header">
+                        <h2 id="CG">Image To Caption Generator DeepLearning Project</h2>
+                    </div>
+                    
+                    <div class="project-image-container">
+                        <img src="assets\project_images\EC.png" alt="Image Captioning" loading="lazy">
+                    </div>
+                    
+                    <div class="project-tech">
+                        <span class="tech-tag">Encoder</span>
+                        <span class="tech-tag">Decoder</span>
+                        <span class="tech-tag">Attention</span>
+                        <span class="tech-tag">ResNet101</span>
+                        <span class="tech-tag">LSTM</span>
+                    </div>
+                    
+                    <div class="project-content">
+                        <p align="justify">
+                            This project focused on image captioning that generates descriptive captions for images using deep learning techniques. Utilized a pre-trained CNN (ResNet101) as an encoder to extract features from images for generating descriptive captions. Implemented an LSTM decoder to generate captions based on the extracted image features, forming a complete image captioning system using deep learning techniques.
+                        </p>
+                        
+                        <div class="project-features">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-image"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <strong>Image Understanding:</strong> Analyzes images to understand content and context.
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-comment-alt"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <strong>Caption Generation:</strong> Creates descriptive captions for images automatically.
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-brain"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <strong>Deep Learning Architecture:</strong> Uses encoder-decoder model with attention mechanism.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-buttons">
+                            <a href="https://github.com/polok-dev98/ImageCaptioning_system_pytorch" class="btn">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-        
     </main>
-    <script src="scripts.js"></script>
 
     <!-- Copyright Notice -->
     <div class="copyright">
-        &copy; 2024 Asif Pervez Polok.
+        &copy; 2025, Asif Pervez Polok
     </div>
 
     <!-- Scripts -->
     <script src="assets/js/vanilla-back-to-top.min.js"></script>
     <script>
         addBackToTop({
-        backgroundColor: "#fff",
-        innerHTML: "Back to Top",
-        textColor: "#333",
+            backgroundColor: "#fff",
+            innerHTML: "Back to Top",
+            textColor: "#333",
+        });
+        
+        // Simple filter functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filters button');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    // In a real implementation, you would filter projects here
+                    // For now, we'll just log the filter
+                    console.log(`Filtering by: ${this.textContent}`);
+                });
+            });
         });
     </script>
     <script src="assets/js/scale.fix.js"></script>

@@ -65,6 +65,12 @@ h6 {
   opacity: 1;
 }
 
+
+.project-image-container img {
+    transform: rotate(90deg);
+    transform-origin: center;
+}
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/

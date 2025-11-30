@@ -137,6 +137,24 @@
         .modal-content, .thumbnail {
             border-radius: 10px;
         }
+        .paper-links {
+            margin-top: 15px;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .paper-link {
+            display: inline-block;
+            padding: 8px 15px;
+            background-color: #007acc;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .paper-link:hover {
+            background-color: #005f99;
+        }
     </style>
 </head>
 <body>
@@ -144,77 +162,60 @@
         <h1>Research</h1>
     </header>
     <div class="container">
-        <div class="paper">
-            <h2>A Transformer-Based Approach for Summarizing Employee Logs</h2>
-            <img id="main-image-2" class="main-image" src="assets\img\textsum_overview.jpeg" alt="Research Paper 2 Image">
-            <div class="thumbnail-row">
-                <img class="thumbnail" src="assets\img\textsum_rouge.png" alt="Thumbnail 2" onclick="openModal('research_images/textsum_rouge.png')">
-                <img class="thumbnail" src="assets\img\textsum_loss.png" alt="Thumbnail 3" onclick="openModal('research_images/textsum_loss.png')">
+        <!-- New Paper Added First -->
+        <div class="paper featured-paper">
+            <h2>A Unified BERT-CNN-BiLSTM Framework for Simultaneous Headline Classification and Sentiment Analysis of Bangla News</h2>
+            
+            <div class="paper-links">
+                <a href="https://arxiv.org/abs/2511.18618" class="paper-link" target="_blank">View Full Paper</a>
             </div>
-            <p align="justify">Abstract: Efficient summarization of employee daily logs is crucial for organizational productivity. This study utilizes the Google Pegasus model 
-                to enhance summarization, addressing traditional challenges with complex document structures. A dataset of daily work logs from a software 
-                development firm was augmented with advanced Generative AI techniques. The Pegasus model was fine-tuned with an input token length of 1024 and 
-                an output token length of 128. Evaluated using the ROUGE metric, the model achieved a ROUGE-1 score of 0.613, ROUGE-2 score of 0.373, ROUGE-L score 
-                of 0.557, and ROUGE-Lsum score of 0.556, demonstrating strong performance in generating coherent and contextually relevant summaries.</p>
+            
+            <img id="main-image-2" class="main-image" src="assets/papers/R1.png" alt="BERT-CNN-BiLSTM Framework Overview">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="assets/papers/R2.png" alt="Results" onclick="openModal('assets/papers/R2.png')">
+                
+            </div>
+            <p align="justify">Abstract: In our daily lives, newspapers are an essential information source that impacts how the public talks about present-day issues. However, effectively navigating the vast amount of news content from different newspapers and online news portals can be challenging. Newspaper headlines with sentiment analysis tell us what the news is about (e.g., politics, sports) and how the news makes us feel (positive, negative, neutral). This helps us quickly understand the emotional tone of the news. This research presents a state-of-the-art approach to Bangla news headline classification combined with sentiment analysis applying Natural Language Processing (NLP) techniques, particularly the hybrid transfer learning model BERT-CNN-BiLSTM. We have explored a dataset called BAN-ABSA of 9014 news headlines, which is the first time that has been experimented with simultaneously in the headline and sentiment categorization in Bengali newspapers. Over this imbalanced dataset, we applied two experimental strategies: technique-1, where undersampling and oversampling are applied before splitting, and technique-2, where undersampling and oversampling are applied after splitting on the In technique-1 oversampling provided the strongest performance, both headline and sentiment, that is 78.57% and 73.43% respectively, while technique-2 delivered the highest result when trained directly on the original imbalanced dataset, both headline and sentiment, that is 81.37% and 64.46% respectively. The proposed model BERT-CNN-BiLSTM significantly outperforms all baseline models in classification tasks, and achieves new state-of-the-art results for Bangla news headline classification and sentiment analysis. These results demonstrate the importance of leveraging both the headline and sentiment datasets, and provide a strong baseline for Bangla text classification in low-resource.</p>
+            <button class="toggle-button" onclick="toggleInsights(2)">Show Insights</button>
+            <div class="insights" id="insights-2" style="display: none;">
+                <h3>Under Review at IEEE Transactions on Computational Social Systems. 2025</h3>
+                <p><strong>Authors:</strong> Raquib M, Akash MM, Ahmed T, Murad SA, Prity FS, Hossain MA, <strong>Polok AP</strong>, Rahimi N</p>
+            </div>
+        </div>
+
+        <!-- Original Paper -->
+        <div class="paper">
+            <h2>Social Media Bangla Fake News Detection Using Deep and Machine Learning Algorithms</h2>
+            
+            <div class="paper-links">
+                <a href="https://www.researchgate.net/profile/Mirza-Raquib-2/publication/381031356_Social_Media_Bangla_Fake_News_Detection_Using_Deep_and_Machine_Learning_Algorithms/links/68162a55bd3f1930dd6c3d55/Social-Media-Bangla-Fake-News-Detection-Using-Deep-and-Machine-Learning-Algorithms.pdf" class="paper-link" target="_blank">View Full Paper</a>
+            </div>
+            
+            <img id="main-image-1" class="main-image" src="assets/papers/FakeNewsMethodology.png" alt="Bangla Fake News Detection Overview">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="assets/papers/FakeNewsResult.png" alt="Results" onclick="openModal('assets/papers/FakeNewsResult.png')">
+                <img class="thumbnail" src="assets/papers/FakeNewsCF.png" alt="Methodology" onclick="openModal('assets/papers/FakeNewsCF.png')">
+            </div>
+            <p align="justify">Abstract: In this current world, media and online news publications are spreading rapidly. The dissemination of inaccurate
+                information on social media platforms is increasingly becoming a concern. The proliferation of fake news is due to the ease with
+                which data can be accessed and shared as a result of the mobile technology revolution. Like many countries, fake news is
+                spreading very fast in Bangladesh. The situation gets worse with the spreading of misinformation about epidemics like COVID-19. 
+                Created a novel dataset of the Bengali language and achieved to goal by using LSTM and machine learning models. Now,
+                other algorithms are used, but the LSTM and machine learning models have good performance. This program's algorithm to
+                select the attribute, a text feature based on TF-IDF and Word Embedding was used. Focused LSTM-base model and machine
+                learning models, especially the Bangla-LSTM-base model and machine learning models. Finally, add a dense layer as a
+                summary layer responsible for generating summary sentences to text. According to all of the evaluations performed above, the
+                additional Trees Classifier outperformed the other six Machine Learning methods. The accuracy rate for identifying false news
+                in news headline data is roughly 86.14%. The second-best accuracy provided by the Random Forest Classifier algorithm is close
+                to 85%. The third-best accuracy provided by the Decision Tree Classifier method is approximately 84%. Moreover, seeing that
+                deep learning algorithms outperformed machine learning ones. Furthermore, LSTM has a 96.14% training accuracy rate and
+                an 86% testing accuracy rate for identifying false news in news headline data.</p>
             <button class="toggle-button" onclick="toggleInsights(1)">Show Insights</button>
             <div class="insights" id="insights-1" style="display: none;">
-                <h3>"Submitted in Springer Conference. July 2024."</h3>
+                <h3>Published in International Journal of Computer Science and Information Technology. May 2024</h3>
+                <p><strong>Authors:</strong> Das NR, Alam M, <strong>Polok AP</strong> , Raquib M, Mamun AA, Hossen MJ</p>
             </div>
         </div>
-        <!--
-        <div class="paper">
-            <h2>A Transformer-Based Approach for Summarizing Employee Logs</h2>
-            <img id="main-image-2" class="main-image" src="https://via.placeholder.com/400x200" alt="Research Paper 2 Image">
-            <div class="thumbnail-row">
-                <img class="thumbnail" src="https://via.placeholder.com/400x200" alt="Thumbnail 1" onclick="openModal('https://via.placeholder.com/400x200')">
-                <img class="thumbnail" src="https://via.placeholder.com/400x200/007acc" alt="Thumbnail 2" onclick="openModal('https://via.placeholder.com/400x200/007acc')">
-                <img class="thumbnail" src="https://via.placeholder.com/400x200/ff0000" alt="Thumbnail 3" onclick="openModal('https://via.placeholder.com/400x200/ff0000')">
-            </div>
-            <p>Abstract: Efficient summarization of employee daily logs is crucial for organizational productivity. This study utilizes the Google Pegasus model to enhance summarization, addressing traditional challenges with complex document structures. A dataset of daily work logs from a software development firm was augmented with advanced Generative AI techniques. The Pegasus model was fine-tuned with an input token length of 1024 and an output token length of 128. Evaluated using the ROUGE metric, the model achieved a ROUGE-1 score of 0.613, ROUGE-2 score of 0.373, ROUGE-L score of 0.557, and ROUGE-Lsum score of 0.556, demonstrating strong performance in generating coherent and contextually relevant summaries.</p>
-            <button class="toggle-button" onclick="toggleInsights(2)">Show Insights</button>
-            <div class="insights" id="insights-2" style="display: none;">
-                <h3>Insights</h3>
-                <p>Insight 1: Vivamus lacinia odio vitae vestibulum vestibulum.</p>
-                <p>Insight 2: Cras venenatis euismod malesuada.</p>
-            </div>
-        </div>
-        -->
-        <!-- Add more papers as needed -->
-        <!--
-        <div class="paper">
-            <h2>An Efficient Approach for Appearance Based Eye Gaze Estimation with 13 Directional Points</h2>
-            <img id="main-image-2" class="main-image" src="https://via.placeholder.com/400x200" alt="Research Paper 2 Image">
-            <div class="thumbnail-row">
-                <img class="thumbnail" src="https://via.placeholder.com/400x200" alt="Thumbnail 1" onclick="openModal('https://via.placeholder.com/400x200')">
-                <img class="thumbnail" src="https://via.placeholder.com/400x200/007acc" alt="Thumbnail 2" onclick="openModal('https://via.placeholder.com/400x200/007acc')">
-                <img class="thumbnail" src="https://via.placeholder.com/400x200/ff0000" alt="Thumbnail 3" onclick="openModal('https://via.placeholder.com/400x200/ff0000')">
-            </div>
-            <p>Abstract: This paper proposes a real-time eye gaze tracking interface based on an active appearance method using a simple web or smartphone camera in an unconstrained environment, where natural head movements have been taken into account. Here, feature extraction from an eye gaze image has been performed by separating the sclera pixel area from the masked eye image. The performance evaluation has been accomplished using decision tree, random forest, and extra tree classifiers. Over 13 targets, the proposed approach has an approximate 98% accuracy with extra tree classifier. The proposed approach may be beneficial to different eye gazed tracking applications in the field of human-computer interaction, robotics, and medical science.</p>
-            <button class="toggle-button" onclick="toggleInsights(2)">Show Insights</button>
-            <div class="insights" id="insights-2" style="display: none;">
-                <h3>Insights</h3>
-                <p>Insight 1: Vivamus lacinia odio vitae vestibulum vestibulum.</p>
-                <p>Insight 2: Cras venenatis euismod malesuada.</p>
-            </div>
-        </div>
-        
-        <div class="paper">
-            <h2>Numerical Modeling of CuSbSe2-based Dual-Heterojunction Thin Film Solar Cell with CGS Back Surface Layer</h2>
-            <img id="main-image-2" class="main-image" src="https://via.placeholder.com/400x200" alt="Research Paper 2 Image">
-            <div class="thumbnail-row">
-                <img class="thumbnail" src="https://via.placeholder.com/400x200" alt="Thumbnail 1" onclick="openModal('https://via.placeholder.com/400x200')">
-                <img class="thumbnail" src="https://via.placeholder.com/400x200/007acc" alt="Thumbnail 2" onclick="openModal('https://via.placeholder.com/400x200/007acc')">
-                <img class="thumbnail" src="https://via.placeholder.com/400x200/ff0000" alt="Thumbnail 3" onclick="openModal('https://via.placeholder.com/400x200/ff0000')">
-            </div>
-            <p>Abstract: Ternary chalcostibite copper antimony selenide (CuSbSe2) can be a potential absorber for succeeding thin film solar cells due to its non-toxic nature, earth-abundance, low-cost fabrication technique, optimum bandgap, and high optical absorption coefficient. The power conversion efficiencies (PCEs) in conventional single heterojunction CuSbSe2 solar cells suffer from higher recombination rate at the interfaces and the presence of a Schottky barrier at the back contact. In this study, we propose a dual-heterojunction n-ZnSe/p-CuSbSe2/p+-copper gallium selenide (CGS) solar device, having CGS as the back surface field (BSF) layer. The BSF layer absorbs low energy (sub-bandgap) light through a tail-states-assisted upconversion technique, leading to enhanced conversion efficiency. Numerical simulations were run in Solar Cell Capacitance Simulator-1 dimensional software to examine how the performance of the proposed solar cell would respond under different conditions of absorber layer thickness, doping levels, and defect densities. The simulation results exhibit a PCE as high as 43.77% for the dual-heterojunction solar cell as compared to 27.74% for the single heterojunction n-ZnSe/p-CuSbSe2 counterpart, demonstrating the capability of approaching the detailed balance efficiency limit calculated by Shockley–Queisser.</p>
-            <button class="toggle-button" onclick="toggleInsights(2)">Show Insights</button>
-            <div class="insights" id="insights-2" style="display: none;">
-                <h3>Insights</h3>
-                <p>Insight 1: Vivamus lacinia odio vitae vestibulum vestibulum.</p>
-                <p>Insight 2: Cras venenatis euismod malesuada.</p>
-            </div>
-        </div>
-        -->
     </div>
 
     <!-- Modal -->
